@@ -78,20 +78,27 @@ https://docs.astral.sh/uv/getting-started/installation/
 # After intallation uv
 
 * Create a folder
+
 * Open a cmd in this folder
+
 * Type this commmand **uv init --package Folder_name**
+
 * Then a folder is created with the name you provided and in this folder uv tool is install
 
 ## How to run File in uv
 
 * You can run the existing file as well which is in src directory with the name of _init_.py.
+
 * If you want to run existing file, then go to terminal and run this command **uv run myproject**
+
 * If you want to know why we type myproject in the command so go to pyproject.toml file, then [project.scripts] section and there is type something like this
   **myproject="myproject:main"** this mean after = myproject is file in src directory you can see as well in this folder there is a function with the name of
   main and we wrapped all this in a command called myproject and you can give any name but the path should be right so thats why in the terminal we tyoe this 
   command **uv run myproject** if we want to tun this function
+
 * Similarly when you want to run the function **hello()** which is in main.py file so when we want to run this function so checkout the .toml file we wrapped up
   the whole path of this command with the name p1 and the syntax in the .toml file like this **p1 = project.main:hello** and when we run this function so the 
   command will be uv run p1.
+
 * In the Path Section Before function use **:** and we use **.** if we want to inside the folder or file.
 
